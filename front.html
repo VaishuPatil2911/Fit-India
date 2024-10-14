@@ -1,0 +1,212 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+</head>
+<style>
+body {background-image:url('children.jpg'); background-repeat:no-repeat; background-attachment:none; background-size:1500px 700px;}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main-wrapper{
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bg-1{
+    width: 100%;
+    min-height: 70vh;
+    background-color:ff9999;
+    position: absolute;
+    top: 0;
+}
+
+.bg-2{
+    width: 100%;
+    min-height: 40vh;
+}
+
+.cards-container{
+    position: absolute;
+    display: grid;
+    grid-template-columns:none;
+    justify-content: left;
+    align-items: left;
+    grid-gap: 20px;
+    padding: 30px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px 20px;
+    margin: 20px;
+    border-radius: 9px;
+    box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.178);  
+    transition: .1s all ease; 
+}
+
+.cards:hover{
+    box-shadow: 34px 34px 34px rgba(0, 0, 0, 0.178);
+}
+
+.heading{
+    font-size: 28px;
+    padding: 10px 0px;
+}
+.text{
+    font-size: 21px;
+}
+@media screen and (max-width: 1400px) {
+    .cards-container{
+        
+        grid-template-columns: repeat(3 ,auto);
+        grid-gap: 0px;
+        padding: 30px;
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .cards{
+        padding: 30px;
+	
+    }
+    .cards-container{
+        grid-template-columns: repeat(3 ,auto);
+    }
+    .cards .heading{
+        font-size: 23px;
+        font-weight: 900;
+    }
+}
+
+</style>
+<nav class="navbar navbar-expand-lg navbar-dark  fixed-top bg-dark">
+  <img src="logo.jpeg" alt="logo" style="width:140px;">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="front.html">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="schedule.html">SCHEDULES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="info.html">INFO</a>
+      </li>
+           <li class="nav-item">
+        <a class="nav-link" href="blog.html">BLOG</a>
+      </li>
+      </li>
+           <li class="nav-item">
+        <a class="nav-link" href="cont.html">CONTACT US</a>
+      </li>
+         </ul>
+    <form class="form-inline my-2 my-lg-0">
+      </form>
+  </div>
+</nav>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<h1 align="center">
+<font face="Lato" color="#FFFFFF" size="7">
+FIT INDIA POLIO VACCINATION
+</font>
+</h1>
+<h3 align="center">
+<font face="Lato" color="FFFFFF" size="5">
+FIGHT POLIO,FOR BETTER TOMORROW!!</font>
+</h3>
+
+<style>
+.button{
+border:inset;
+color:black;
+padding:5px 35px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+font-size:16px;
+margin:4px 2px;
+cursor:pointer;
+}
+
+.button{background-color:#ff5050; border-radius:16px;}
+
+.button:hover {background-color:#ff6666; color:white;}
+
+.video1 {margin-right:50vw;}
+.video2 {margin-left:50vw;}
+</style>
+
+<body>
+<br><br><br><br><br><br>
+<center><a href="login.html" button class="button" onclick="alert('Make sure that you have registered')"><font face="Lato" size="4"><b>LOGIN</b></font></button></a></center>
+<br><br><br><br><br><br>
+
+<div class="video1">
+<video width="700";  controls>
+  <source src="running girls.mp4" type="video/mp4">
+   Your browser does not support HTML video.
+</video>
+</div>
+<br>
+<div class="video2">
+<video width="700";  controls>
+  <source src="playing girls.mp4" type="video/mp4">
+   Your browser does not support HTML video.
+</video>
+</div>
+
+
+<div class="main-wrapper">
+<div class="bg-1"></div>
+<div class="bg-2"></div>
+            
+ <div class="cards-container">
+                
+       <div class="cards">
+       <img src="login.png" alt="" style="width:100px;">
+       <div class="heading"> LOGIN </div>
+       <div class="text"></div>
+       <a href="login.html" onclick="alert('Make sure that you have registered')"> Click here to login </a>
+   </div>
+                
+    <div class="cards">
+   <img src="register.png" alt="" style="width:100px;">
+   <div class="heading">REGISTER</div>
+   <div class="text"></div>
+   <a href="registration.html"> Click here to register </a>
+     </div>
+                
+	<div class="cards">
+        <img src="request.jpg"  alt="" style=" width:100px";>
+      <div class="heading">REQUEST</div>
+   <div class="text"></div>
+          <a href="requirement.html"  onclick="alert('Make sure that you have registered')">Click here to request</a>
+          </div>
+
+                
+            </div>  
+                </div>
+
+</body>
+</html>

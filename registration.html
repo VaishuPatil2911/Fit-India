@@ -1,0 +1,75 @@
+<!Doctype html>
+<fieldset>
+
+<body style="background-image:url('crp.jpg'); background-repeat:no-repeat; background-attachment:fixed; background-size:cover">
+<legend>REGISTRATION WINDOW</legend>
+<center><h1>REGISTRATION FORM<h1></center>
+<h2>Parent Information : </h2>
+<form action="code.php" method="post">
+Parent's Name
+<input type="text" placeholder="father's name" name="pname" ><br><br>
+Child number in family
+<input type="number" name="chnum"><br><br>
+Contact number
+<input type="tel" name="cnum"><br><br>
+
+<h2>Child Information: </h2>
+Child's Name
+<input type="text" placeholder="firstname lastname" name="cname"><br><br>
+Childs's Age
+<input type="number" name="cage"><br><br>
+Childs's birth date
+<input type="tel" name="date"><br><br>
+Previously taken vaccine
+<input type="text" name="vname1"><br><br>
+Next vaccine
+<input type="text" name="vname2"><br><br>
+<h2>Location:</h2>
+
+
+City
+<input type="textarea" name="area">
+<br><br>
+
+State
+<select state="state" name="state">
+    <option value="Maharashtra">Maharastra</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="Gujrat">Gujrat</option>
+    <option value="Rajsthan">Rajsthan</option>
+    </select><br><br>
+    
+    
+
+Country
+<input type="text" name="country" value="India" required><br><br><br>
+
+
+<style>
+.button{
+border:inset;
+color:black;
+padding:5px 35px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+font-size:16px;
+margin:4px 2px;
+cursor:pointer;
+}
+
+.button{background-color:#ff4d4d; border-radius:16px;}
+
+.button:hover {background-color:#ff4d4d; color:white;}
+</style>
+
+<body>
+
+<input type="submit" class="button button1" name="registration" value="Register">
+
+<button class="button button2">Reset</button>
+
+</fieldset>
+</form>
+</body>
+</html>

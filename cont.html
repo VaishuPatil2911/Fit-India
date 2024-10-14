@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark  fixed-top bg-dark">
+  <img src="logo.jpeg" alt="logo" style="width:140px;">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="front.html">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="schedule.html">SCHEDULES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="info.html">INFO</a>
+      </li>
+           <li class="nav-item">
+        <a class="nav-link" href="blog.html">BLOG</a>
+      </li>
+      </li>
+           <li class="nav-item">
+        <a class="nav-link" href="cont.html">CONTACT US</a>
+      </li>
+         </ul>
+    <form class="form-inline my-2 my-lg-0">
+      </form>
+  </div>
+</nav>
+
+<style>
+body{background-image:url("book.jpg"); background-repeat:no-repeat; background-attachment:fixed; background-size:cover;}
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'calibri';
+}
+
+.heading{
+    padding: 30px 0px;
+    font-size:30px;
+    font-family:'Segoe UI';
+}
+.contact-box{
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+    background-color: #f2f2ff;
+    padding: 20px;
+    box-shadow: 15px 15px 15px rgb(211, 208, 208);
+    border-radius: 7px;
+}
+.left-contact{
+    background-color: #009999;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    padding: 50px;
+    border-radius: 9px;
+}
+.left-contact h1{
+    font-size: 50px;
+    padding: 10px 0px;
+}
+.left-contact p{
+    font-size: 20px;
+    padding: 20px 0px;
+}
+.left-icon{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.left-icon h3{
+    z-index: 10;
+   font-size: 30px;
+}
+.las{
+    padding: 0px 10px;
+    font-size: 50px;
+}
+.small-circle{
+    background-color: #ff0066;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    z-index: 5;
+}
+.big-circle{
+    background-color: #cc99ff;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(200px, 200px);
+}
+.right-contact,.form-container{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 20px;
+}
+input,textarea{
+    width: 450px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background-color:rgb(207, 198, 198);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 10px;
+}
+label{
+    font-size: 22px;
+    padding: 10px 0px;
+}
+select{
+    width: 450px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(190, 187, 187);
+    border: 2px solid transparent;
+    font-size: 18px;
+    margin: 10px;
+
+ }
+button{
+    padding: 15px 40px;
+    border: none;
+    background-color: #009999;
+    font-size: 20px;
+    margin: 30px 10px;
+    border-radius: 6px;
+    color: white;
+    transition: .5s all ease-in-out;
+    border: 2px solid transparent;
+}
+button:hover{
+    background-color: #cc99ff;
+    border: 2px solid #eb77c4;
+    color: black
+    ;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.lab{
+    padding: 20px 100px;
+    font-size: 50px;
+    color: #ff0066;
+}
+
+@media screen and (max-width:1600px ) {
+    .left-contact h1{
+        font-size: 30px;
+    }
+    .left-contact p{
+        font-size: 20px;
+    }
+    .left-icon h3{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1350px ) {
+    .lab{
+        padding: 20px 20px;
+    }
+}
+@media screen and (max-width:1200px ) {
+   .contact-box{
+       width: 95%;
+   }
+}
+@media screen and (max-width:1100px ) {
+    .small-circle{
+       
+        bottom: 20px;
+        right: 20px;
+        z-index: 5;
+    }
+    .big-circle{
+       
+        transform: translate(300px, 300px);
+    }
+    .left-contact{
+        padding: 20px;
+    }
+    .left-contact h1{
+        font-size: 22px;
+    }
+    .left-contact p{
+        font-size: 18px;
+    }
+    .left-icon h3{
+        font-size: 18px;
+    }
+    .las{
+        font-size: 30px;
+    }
+    input,textarea{
+        width: 350px;
+    }
+}
+@media screen and (max-width:950px ) {
+    .contact-box{
+        flex-direction: column;
+    } 
+}
+@media screen and (max-width:520px ) {
+    .form-container{
+        flex-direction: column;
+    }
+    .social-icons{
+        flex-direction: row;
+    }  
+}
+@media screen and (max-width:420px ) {
+    input,textarea{
+        width: 300px;
+    } 
+}
+
+
+</style>
+<body>
+    <ul>
+        <li><a class="button" href="front.html">Home</a></li> 
+      </ul>
+	    
+           
+   
+   
+        <div class="heading">
+            <div style="background-color:salmon; text-align:center;">
+<h2> HOW CAN WE HELP? </h2>
+<h3>WE'D LOVE TO HERE FROM YOU!!</h3>
+</div><br>
+        <div class="contact-box">
+            <div class="left-contact">
+                <h1>Contact Information</h1>
+                <p>Any Question ? just write us about it</p>
+                <div class="phone  left-icon">
+                    <i class="las la-phone"></i>
+                    <h3>+91 513 167 5324</h3>
+                </div>
+
+                <div class="mail left-icon">
+                    <i class="las la-envelope"></i>
+                    <h3>fitindiapoliovaccination@gmail.com</h3>
+                </div>
+
+                <div class="location left-icon">
+                    <i class="las la-map-marker-alt"></i>
+                    <h3>Maharashtra, India</h3>
+                </div>
+                <div class="small-circle"></div>
+                <div class="big-circle"></div>
+
+            </div>
+            <div class="right-contact">
+               <div class="form-container">
+                   <form action="code.php" method="post">
+                       
+                       <input type="text" placeholder="Name" name="name">                       
+                       <input type="email" placeholder="Email" name="email">                       
+                       <input type="textarea" placeholder="Message" cols="30" rows="" name="mess">
+                       <input type="submit" name="contact" value="Submit">
+                       <!-- <button>
+                           Submit
+                       </button> -->
+
+                    </form>
+                    <div class="social-icons">
+			
+                        <i class="lab la-facebook"></i>
+			<p>Fit India Polio Vaccination</p>
+                        <i class="lab la-instagram"></i>
+                        <p>@FitIndiaPolioVaccination</p>
+			<i class="lab la-twitter"></i>
+			<p>Fit India Polio Vaccination</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
